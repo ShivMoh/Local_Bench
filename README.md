@@ -11,7 +11,7 @@ pip install -U transformers trl peft optimum bitsandbytes numpy datasets sentenc
 chmod u+x ./model.sh
 ./model.sh
 ```
-%See model.sh for more examples on how to run specific scripts. Note that for more preciseness, it may be necessary to edit the scripts themselves%
+_Note: See model.sh for more examples on how to run specific scripts. Note that for more preciseness, it may be necessary to edit the scripts themselves_
 
 ## Important
 Benchmark only works for Nvidia GPUs. Dependecies on libs such as pynvml which utilises nvml prevent it from working with other GPU types. To run on other types of GPUs, remove pynvml from the scripts and utilise alternatives primarily sucha as GPUtil. However, certain metrics
