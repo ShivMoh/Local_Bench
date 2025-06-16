@@ -6,6 +6,13 @@ A benchmark created as a requirement for conducting inference benchmarks for a f
 pip install -U transformers trl peft optimum bitsandbytes numpy datasets sentence_transformers langchain faiss-cpu langchain_huggingface langchain_community pypdf sympy GPUtil psutil pynvml
 ```
 
+## Execution
+```bash
+chmod u+x ./model.sh
+./model.sh
+```
+%See model.sh for more examples on how to run specific scripts. Note that for more preciseness, it may be necessary to edit the scripts themselves%
+
 ## Important
 Benchmark only works for Nvidia GPUs. Dependecies on libs such as pynvml which utilises nvml prevent it from working with other GPU types. To run on other types of GPUs, remove pynvml from the scripts and utilise alternatives primarily sucha as GPUtil. However, certain metrics
 such as power consumption may be not be possible for data collection due to a lack of alternatives.
