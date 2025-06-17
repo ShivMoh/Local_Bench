@@ -9,7 +9,7 @@ pip install -U transformers trl peft optimum bitsandbytes numpy datasets sentenc
 ## Execution
 ```bash
 chmod u+x ./model.sh
-./model.sh
+nohup ./model.sh
 ```
 _Note: See model.sh for more examples on how to run specific scripts. Note that for more preciseness, it may be necessary to edit the scripts themselves_
 
