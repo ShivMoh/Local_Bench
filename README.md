@@ -1,6 +1,30 @@
 ## Overview
 A benchmark created as a requirement for conducting inference benchmarks for a final year research project titled "Local and Personalized Large Language Models in Intelligent Tutoring Systems" conducted at the University of Guyana towards the Bachelor's in Computer Science
 
+## Create conda environment 
+```
+conda create -n <name_of_environment> python=3.12
+```
+
+Activate using:
+```
+conda activate <name_of_environment>
+```
+
+See further instructions: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-python.html
+Install conda: https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html
+
+## Create venv environment
+
+```
+python3 -m venv path/to/environment
+```
+
+Activate using:
+```
+source path/to/environment/bin/activate
+```
+
 ## Installation 
 ```python
 pip install -U transformers trl peft optimum bitsandbytes numpy datasets sentence_transformers langchain faiss-cpu langchain_huggingface langchain_community pypdf sympy GPUtil psutil pynvml
