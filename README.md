@@ -37,6 +37,19 @@ nohup ./model.sh
 ```
 _Note: See model.sh for more examples on how to run specific scripts. Note that for more preciseness, it may be necessary to edit the scripts themselves_
 
+## RAG experiment
+
+A note on the RAG experiment is that it requires content to search for such that the content must be relevant to the prompt list created. Content must be structured as follows
+
+```
+data
+  one
+  two
+  etc
+```
+
+Currently the script requires one to ten, whereas rag_latency.py requires ./data/ten to exist and document_chunking.py requires one to ten to exist
+
 ## Important
 Benchmark only works for Nvidia GPUs. Dependecies on libs such as pynvml which utilises nvml prevent it from working with other GPU types. To run on other types of GPUs, remove pynvml from the scripts and utilise alternatives primarily sucha as GPUtil. However, certain metrics
 such as power consumption may be not be possible for data collection due to a lack of alternatives.
